@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D37732120D02411004A9D76 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37732020D02411004A9D76 /* ScrollViewController.swift */; };
+		1D4A6D5120CD387000D8CE9B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4A6D5020CD387000D8CE9B /* Response.swift */; };
+		1D4A6D5320CD41C100D8CE9B /* FriendsListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4A6D5220CD41C100D8CE9B /* FriendsListTVC.swift */; };
+		1D4A6D5520CD423E00D8CE9B /* OperationsWithAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4A6D5420CD423E00D8CE9B /* OperationsWithAPI.swift */; };
+		1D5F391020C9C30600FC4C9C /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F390F20C9C30600FC4C9C /* Authorization.swift */; };
+		1DBEE7BE20C1D0D800EF2950 /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBEE7BD20C1D0D800EF2950 /* LoginWebView.swift */; };
 		1DCCE6C020C17CF400E2CE22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCCE6BF20C17CF400E2CE22 /* AppDelegate.swift */; };
 		1DCCE6C220C17CF400E2CE22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCCE6C120C17CF400E2CE22 /* ViewController.swift */; };
 		1DCCE6C520C17CF400E2CE22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCCE6C320C17CF400E2CE22 /* Main.storyboard */; };
 		1DCCE6C720C17CF600E2CE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCCE6C620C17CF600E2CE22 /* Assets.xcassets */; };
 		1DCCE6CA20C17CF600E2CE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCCE6C820C17CF600E2CE22 /* LaunchScreen.storyboard */; };
+		1DCCE6D220C189CE00E2CE22 /* AuthorizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCCE6D120C189CE00E2CE22 /* AuthorizeButton.swift */; };
+		1DEBFF6720CFFAD400E47EE4 /* FriendsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEBFF6620CFFAD400E47EE4 /* FriendsListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D37732020D02411004A9D76 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		1D4A6D5020CD387000D8CE9B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		1D4A6D5220CD41C100D8CE9B /* FriendsListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListTVC.swift; sourceTree = "<group>"; };
+		1D4A6D5420CD423E00D8CE9B /* OperationsWithAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsWithAPI.swift; sourceTree = "<group>"; };
+		1D5F390F20C9C30600FC4C9C /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		1DBEE7BD20C1D0D800EF2950 /* LoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
 		1DCCE6BC20C17CF400E2CE22 /* PhotoVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCCE6BF20C17CF400E2CE22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DCCE6C120C17CF400E2CE22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +36,8 @@
 		1DCCE6C620C17CF600E2CE22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DCCE6C920C17CF600E2CE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DCCE6CB20C17CF600E2CE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DCCE6D120C189CE00E2CE22 /* AuthorizeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeButton.swift; sourceTree = "<group>"; };
+		1DEBFF6620CFFAD400E47EE4 /* FriendsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D4E54F020CBC73700A89482 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DCCE6D120C189CE00E2CE22 /* AuthorizeButton.swift */,
+				1DCCE6C320C17CF400E2CE22 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1DCCE6B320C17CF400E2CE22 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +79,37 @@
 		1DCCE6BE20C17CF400E2CE22 /* PhotoVK */ = {
 			isa = PBXGroup;
 			children = (
-				1DCCE6BF20C17CF400E2CE22 /* AppDelegate.swift */,
-				1DCCE6C120C17CF400E2CE22 /* ViewController.swift */,
-				1DCCE6C320C17CF400E2CE22 /* Main.storyboard */,
+				1DEBFF6520CFF98D00E47EE4 /* Controller */,
+				1DEBFF6420CFF96600E47EE4 /* Model */,
 				1DCCE6C620C17CF600E2CE22 /* Assets.xcassets */,
+				1D4E54F020CBC73700A89482 /* View */,
 				1DCCE6C820C17CF600E2CE22 /* LaunchScreen.storyboard */,
 				1DCCE6CB20C17CF600E2CE22 /* Info.plist */,
 			);
 			path = PhotoVK;
+			sourceTree = "<group>";
+		};
+		1DEBFF6420CFF96600E47EE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DCCE6BF20C17CF400E2CE22 /* AppDelegate.swift */,
+				1D5F390F20C9C30600FC4C9C /* Authorization.swift */,
+				1D4A6D5420CD423E00D8CE9B /* OperationsWithAPI.swift */,
+				1D4A6D5020CD387000D8CE9B /* Response.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DEBFF6520CFF98D00E47EE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DCCE6C120C17CF400E2CE22 /* ViewController.swift */,
+				1D4A6D5220CD41C100D8CE9B /* FriendsListTVC.swift */,
+				1DEBFF6620CFFAD400E47EE4 /* FriendsListCell.swift */,
+				1DBEE7BD20C1D0D800EF2950 /* LoginWebView.swift */,
+				1D37732020D02411004A9D76 /* ScrollViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4A6D5520CD423E00D8CE9B /* OperationsWithAPI.swift in Sources */,
 				1DCCE6C220C17CF400E2CE22 /* ViewController.swift in Sources */,
+				1DBEE7BE20C1D0D800EF2950 /* LoginWebView.swift in Sources */,
+				1D4A6D5120CD387000D8CE9B /* Response.swift in Sources */,
+				1DEBFF6720CFFAD400E47EE4 /* FriendsListCell.swift in Sources */,
 				1DCCE6C020C17CF400E2CE22 /* AppDelegate.swift in Sources */,
+				1D37732120D02411004A9D76 /* ScrollViewController.swift in Sources */,
+				1D4A6D5320CD41C100D8CE9B /* FriendsListTVC.swift in Sources */,
+				1D5F391020C9C30600FC4C9C /* Authorization.swift in Sources */,
+				1DCCE6D220C189CE00E2CE22 /* AuthorizeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
