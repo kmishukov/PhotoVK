@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 import SafariServices
 
-public var authorized: Authorization?
+var authorized: Authorization?
 
 class LoginWebView: UIViewController, UIWebViewDelegate {
 

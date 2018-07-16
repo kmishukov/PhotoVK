@@ -119,13 +119,12 @@ class ScrollViewController: UIViewController {
                         let errorLabel = UILabel()
                         errorLabel.frame = CGRect(x: 0, y: 0, width: self.mainScrollView.frame.width - 100, height: 200)
                         errorLabel.center = self.view.center
-//                        errorLabel.backgroundColor = .yellow
                         errorLabel.textColor = .red
                         errorLabel.numberOfLines = 0
                         errorLabel.alpha = 0.5
                         errorLabel.textAlignment = .center
                         if let code = error.error_code, let msg = error.error_msg {
-                            errorLabel.text = "error_code: \(code)\n\n\nerror_msg:\n\n\(msg)"
+                            errorLabel.text = "error_code: \(code);\n\nerror_msg:\n\n\(msg)"
                         } else {
                             errorLabel.text = "Unrecognized error."
                         }

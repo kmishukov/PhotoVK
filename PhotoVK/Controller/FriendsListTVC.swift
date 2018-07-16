@@ -35,15 +35,13 @@ class FriendsListTVC: UITableViewController {
         return 80
     }
     
-      // MARK: - Table view data source
+      // MARK: - TableView DataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         if let count = friendsResponse?.items?.count {
            return count
         } else {
@@ -56,8 +54,6 @@ class FriendsListTVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FriendsListCell
         cell.selectionStyle = .none
         if let items = friendsResponse?.items {
-            
-            // Names
             if let name = items[indexPath.row].first_name, let surname = items[indexPath.row].last_name {
                     cell.nameLabel.text = name + " " + surname
             } else {
@@ -65,8 +61,6 @@ class FriendsListTVC: UITableViewController {
                 cell.nameLabel.text = "Error?"
             }
             
-            
-            // User Image
             cell.userImage.image = UIImage(named: "placeholder")
             if let photoAdress = items[indexPath.row].photo_100 {
                 cell.userImage.loadImage(fromURL: photoAdress)
@@ -88,10 +82,8 @@ class FriendsListTVC: UITableViewController {
     }
     
     func removeCookies(){
-//        let cookie = HTTPCookie.self
         let cookieJar = HTTPCookieStorage.shared
         for cookie in cookieJar.cookies! {
-            // print(cookie.name+"="+cookie.value)
             cookieJar.deleteCookie(cookie)
         }
     }

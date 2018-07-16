@@ -15,6 +15,7 @@ class FriendsListCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        userImage.image = UIImage(named: "placeholder")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

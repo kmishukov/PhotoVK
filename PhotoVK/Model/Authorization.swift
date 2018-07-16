@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Authorization {
+struct Authorization {
     let access_token: String
     let user_id: String
     var expires_in: String

@@ -14,7 +14,7 @@ class AuthorizeButton: UIButton {
         super.layoutSubviews()
         if imageView != nil {
             imageEdgeInsets = UIEdgeInsets(top: 25, left: 25 , bottom: 25, right: 225)
-            titleEdgeInsets = UIEdgeInsets(top: 0, left: -80, bottom: 0, right: 10)
+            titleEdgeInsets = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 10)
         }
     }
     

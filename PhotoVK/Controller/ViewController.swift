@@ -12,8 +12,6 @@ import Foundation
 class ViewController: UIViewController {
     
     @IBOutlet var authorizeButton: AuthorizeButton!
-    @IBOutlet var textLabel: UILabel!
-    
     var didLogIn: Bool = false
     
     override func viewDidLoad() {
@@ -33,14 +31,13 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.blueVK
         authorizeButton.setTitle("Авторизация", for: .normal)
         authorizeButton.setTitleColor(UIColor.blueVK, for: .normal) 
-        authorizeButton.setImage(#imageLiteral(resourceName: "2000px-VK.com-logo.svg-2"), for: .normal)
+        authorizeButton.setImage(#imageLiteral(resourceName: "vk_logo_200.svg-2"),for: .normal)
         authorizeButton.layer.backgroundColor = UIColor.buttonGray.cgColor
         authorizeButton.layer.cornerRadius = 20
     }
     
     func authorizationCheck() {
         if authorized != nil {
-//            print("Ready to perform segue to TableViewController")
             performSegue(withIdentifier: "showFriends", sender: nil)
         } else {
             print("No authorization detected.")

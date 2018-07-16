@@ -19,8 +19,7 @@ struct API {
     
     mutating func getFriendsList(authorization: Authorization, completion: @escaping (GetFriendsObject?) -> Void ) {
         let methodURL = "https://api.vk.com/method/friends.get?user_id=\(authorization.user_id)&order=name&count=200&offset=1&fields=photo_100,bdate&name_case=nom&access_token=\(authorization.access_token)&v=\(API.version)"
-//        Testing
-//        print("friends.GET URL: \(methodURL)")
+
         guard let url = URL(string: methodURL) else { return }
         
         let task = URLSession.shared.dataTask(with: url) { (data, responseData, error) in
@@ -50,9 +49,6 @@ struct API {
     
     mutating func getPhotos(authorization: Authorization, profile_id: Int, completion: @escaping (GetProfilePhotosObject?) -> Void ) {
         let methodURL = "https://api.vk.com/method/photos.get?owner_id=\(profile_id)&album_id=profile&sizes=1&rev=1&extended=1&feed_type=photo&count=200&offset=1&access_token=\(authorization.access_token)&v=\(API.version)"
-
-//  Testing
-//  print("photos.GET URL: \(methodURL)")
 
         guard let url = URL(string: methodURL) else { return }
         
