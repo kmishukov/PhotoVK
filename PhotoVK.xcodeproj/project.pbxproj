@@ -55,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				1DCCE6D120C189CE00E2CE22 /* AuthorizeButton.swift */,
+				1DEBFF6620CFFAD400E47EE4 /* FriendsListCell.swift */,
 				1DCCE6C320C17CF400E2CE22 /* Main.storyboard */,
 			);
 			path = View;
@@ -105,7 +106,6 @@
 			children = (
 				1DCCE6C120C17CF400E2CE22 /* ViewController.swift */,
 				1D4A6D5220CD41C100D8CE9B /* FriendsListTVC.swift */,
-				1DEBFF6620CFFAD400E47EE4 /* FriendsListCell.swift */,
 				1DBEE7BD20C1D0D800EF2950 /* LoginWebView.swift */,
 				1D37732020D02411004A9D76 /* ScrollViewController.swift */,
 			);

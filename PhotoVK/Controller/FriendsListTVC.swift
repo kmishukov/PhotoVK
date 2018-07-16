@@ -42,9 +42,6 @@ class FriendsListTVC: UITableViewController {
         return 1
     }
 
-    
- 
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if let count = friendsResponse?.items?.count {
@@ -59,14 +56,17 @@ class FriendsListTVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FriendsListCell
         cell.selectionStyle = .none
         if let items = friendsResponse?.items {
+            
+            // Names
             if let name = items[indexPath.row].first_name, let surname = items[indexPath.row].last_name {
-                cell.nameLabel.text = name + " " + surname
+                    cell.nameLabel.text = name + " " + surname
             } else {
                 print("Error retrieving first_name & last_name on \(indexPath.row) row.")
                 cell.nameLabel.text = "Error?"
             }
             
-            // Image
+            
+            // User Image
             cell.userImage.image = UIImage(named: "placeholder")
             if let photoAdress = items[indexPath.row].photo_100 {
                 cell.userImage.loadImage(fromURL: photoAdress)
@@ -105,3 +105,4 @@ class FriendsListTVC: UITableViewController {
         }
     }
 }
+

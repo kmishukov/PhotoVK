@@ -43,6 +43,7 @@ struct Friend: Codable {
     let id: Int?
     let first_name: String?
     let last_name: String?
+    let bdate: String?
     let photo_100: String?
     let online: Int?
     
@@ -50,6 +51,7 @@ struct Friend: Codable {
         case id = "id"
         case first_name = "first_name"
         case last_name = "last_name"
+        case bdate = "bdate"
         case photo_100 = "photo_100"
         case online = "online"
     }
@@ -59,6 +61,7 @@ struct Friend: Codable {
         id = try values.decodeIfPresent(Int.self, forKey: .id)
         first_name = try values.decodeIfPresent(String.self, forKey: .first_name)
         last_name = try values.decodeIfPresent(String.self, forKey: .last_name)
+        bdate = try values.decodeIfPresent(String.self, forKey: .bdate)
         photo_100 = try values.decodeIfPresent(String.self, forKey: .photo_100)
         online = try values.decodeIfPresent(Int.self, forKey: .online)
     }

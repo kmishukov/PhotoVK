@@ -15,7 +15,6 @@ public var authorized: Authorization?
 class LoginWebView: UIViewController, UIWebViewDelegate {
 
     @IBOutlet var myWebView: UIWebView!
-
     
     override func viewWillAppear(_ animated: Bool) {
         self.myWebView.delegate = self

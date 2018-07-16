@@ -18,7 +18,7 @@ struct API {
 
     
     mutating func getFriendsList(authorization: Authorization, completion: @escaping (GetFriendsObject?) -> Void ) {
-        let methodURL = "https://api.vk.com/method/friends.get?user_id=\(authorization.user_id)&order=name&count=200&offset=1&fields=photo_100&name_case=nom&access_token=\(authorization.access_token)&v=\(API.version)"
+        let methodURL = "https://api.vk.com/method/friends.get?user_id=\(authorization.user_id)&order=name&count=200&offset=1&fields=photo_100,bdate&name_case=nom&access_token=\(authorization.access_token)&v=\(API.version)"
 //        Testing
 //        print("friends.GET URL: \(methodURL)")
         guard let url = URL(string: methodURL) else { return }

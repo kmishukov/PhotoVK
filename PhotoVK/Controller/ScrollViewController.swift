@@ -47,7 +47,7 @@ class ScrollViewController: UIViewController {
                     print("Response.count returned nil")
                     return
                 }
-                print("Count: \(count)")
+                print("Items of <Photo> recieved: \(count)")
                 if count > 1 {
                     var i = 0
                     guard let items = response.items else {

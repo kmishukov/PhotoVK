@@ -12,7 +12,7 @@ class FriendsListCell: UITableViewCell {
 
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var userImage: UIImageView!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }

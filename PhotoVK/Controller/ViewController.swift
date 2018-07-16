@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     
     func authorizationCheck() {
         if authorized != nil {
-            print("Ready to perform segue to TableViewController")
+//            print("Ready to perform segue to TableViewController")
             performSegue(withIdentifier: "showFriends", sender: nil)
         } else {
             print("No authorization detected.")
