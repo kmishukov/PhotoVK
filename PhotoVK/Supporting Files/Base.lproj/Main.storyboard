@@ -101,7 +101,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Friends" id="ABc-ZB-azs">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="V6p-a2-cVy">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="V6p-a2-cVy">
                             <connections>
                                 <action selector="logoutButtonPressed:" destination="COP-zd-k1p" id="Kjj-PE-hAM"/>
                             </connections>
