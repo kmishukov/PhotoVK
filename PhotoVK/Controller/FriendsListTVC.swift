@@ -53,24 +53,9 @@ class FriendsListTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FriendsListCell
         cell.selectionStyle = .none
-        if let items = friendsResponse?.items {
-            if let name = items[indexPath.row].first_name, let surname = items[indexPath.row].last_name {
-                    cell.nameLabel.text = name + " " + surname
-            } else {
-                print("Error retrieving first_name & last_name on \(indexPath.row) row.")
-                cell.nameLabel.text = "Error?"
-            }
-            
-            cell.userImage.image = UIImage(named: "placeholder")
-            if let photoAdress = items[indexPath.row].photo_100 {
-                cell.userImage.loadImage(fromURL: photoAdress)
-            } else {
-                print("Error: image URL is nil.")
-                cell.userImage.image = UIImage(named: "errorURL")
-            }
-            cell.userImage.translatesAutoresizingMaskIntoConstraints = false
-            cell.userImage.layer.cornerRadius = 25
-            cell.userImage.clipsToBounds = true
+        
+        if let friend = friendsResponse?.items?[indexPath.row] {
+            cell.configureCell(friend: friend)
         }
         return cell
     }
